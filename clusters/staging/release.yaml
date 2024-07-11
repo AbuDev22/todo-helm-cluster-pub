@@ -7,8 +7,7 @@ spec:
   interval: 1m
   chart:
     spec:
-      chart: ./charts/todoapp-chart
-      version: 1.0.0
+      chart: charts/todoapp-chart  # Adjust this path to match your chart's location in the repo
       sourceRef:
         kind: GitRepository
         name: todo-helm
