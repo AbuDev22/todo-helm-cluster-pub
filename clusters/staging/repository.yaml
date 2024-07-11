@@ -1,0 +1,15 @@
+apiVersion: source.toolkit.fluxcd.io/v1
+kind: GitRepository
+metadata:
+  name: todo-helm
+  namespace: flux-system
+spec:
+  interval: 1m
+  url: https://github.com/Abudev22/todo-helm-cluster-pub
+  ref:
+    branch: main
+  ignore: |
+    # exclude all
+    /*
+    # include charts directory
+    !/charts/ 
