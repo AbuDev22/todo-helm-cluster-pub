@@ -7,7 +7,7 @@ spec:
   interval: 1m
   chart:
     spec:
-      chart: todoapp-chart
+      chart: ./charts/todoapp-chart
       version: 1.0.0
       sourceRef:
         kind: GitRepository
