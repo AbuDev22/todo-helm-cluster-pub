@@ -11,7 +11,7 @@ spec:
       sourceRef:
         kind: GitRepository
         name: todo-helm
-        namespace: default
+        namespace: flux-system
       interval: 1m
   values:
     replicaCount: 2
