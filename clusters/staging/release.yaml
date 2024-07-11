@@ -2,7 +2,7 @@ apiVersion: helm.toolkit.fluxcd.io/v2
 kind: HelmRelease
 metadata:
   name: todo-release
-  namespace: flux-system
+  namespace: default
 spec:
   interval: 1m
   chart:
@@ -13,5 +13,3 @@ spec:
         name: todo-helm
         namespace: flux-system
       interval: 1m
-  values:
-    replicaCount: 3
